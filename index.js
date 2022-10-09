@@ -65,7 +65,7 @@ const fluidTypography = function ({ addUtilities, theme }) {
 			letterSpacing: 0.2,
 		},
 		".fluid-base": {
-			fontSize: hasCustomRem ? `${fluidConfig.remSize}px` : "1rem",
+			fontSize: generateFluidRule(0.8, {...fluidConfig,minTypeScale: 1}),//hasCustomRem ? `${fluidConfig.remSize}px` : "1rem",
 			lineHeight: 1.4,
 			letterSpacing: 0.5,
 		},
